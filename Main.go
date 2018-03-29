@@ -40,7 +40,7 @@ func main() {
 
 			bot.Send(msg)
 		} else {
-			bot.Send(tgbotapi.NewMessage(update.Message.Chat.ID, "Length is:" + strconv.Itoa(utf8.RuneCountInString(update.Message.Text))))
+			bot.Send(tgbotapi.NewMessage(update.Message.Chat.ID, "Length is - " + strconv.Itoa(utf8.RuneCountInString(update.Message.Text))))
 		}
 	}
 }
