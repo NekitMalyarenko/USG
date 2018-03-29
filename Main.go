@@ -2,7 +2,6 @@ package main
 
 import (
 	"github.com/go-telegram-bot-api/telegram-bot-api"
-	"os"
 	"log"
 	"strconv"
 	"unicode/utf8"
