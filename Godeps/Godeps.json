@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/NekitMalyarenko/USG/upload/master",
+	"ImportPath": "github.com/NekitMalyarenko/USG/",
 	"GoVersion": "go1.9",
 	"GodepVersion": "v80",
 	"Deps": [
