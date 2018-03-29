@@ -1,1 +1,1 @@
-worker: usg
+worker: USG
