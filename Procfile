@@ -1,1 +1,1 @@
-worker: USGBOT
+worker: usg
