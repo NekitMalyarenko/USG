@@ -9,8 +9,6 @@ import (
 
 
 func main() {
-	os.Setenv(BOT_TOKEN, "522818795:AAFQnTgc-nfziv3zXjb7MNF1PzoSSIjanHI")
-
 	bot, err := tgbotapi.NewBotAPI(GetString(BOT_TOKEN))
 	if err != nil {
 		log.Panic(err)
