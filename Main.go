@@ -1,13 +1,17 @@
-package main
+package main2
 
 import (
 	"github.com/go-telegram-bot-api/telegram-bot-api"
+	"os"
 	"log"
 	"strconv"
+	"unicode/utf8"
 )
 
 
 func main() {
+	os.Setenv(BOT_TOKEN, "522818795:AAFQnTgc-nfziv3zXjb7MNF1PzoSSIjanHI")
+
 	bot, err := tgbotapi.NewBotAPI(GetString(BOT_TOKEN))
 	if err != nil {
 		log.Panic(err)
@@ -39,7 +43,7 @@ func main() {
 
 			bot.Send(msg)
 		} else {
-			bot.Send(tgbotapi.NewMessage(update.Message.Chat.ID, "Length is:" + strconv.Itoa(len(update.Message.Text))))
+			bot.Send(tgbotapi.NewMessage(update.Message.Chat.ID, "Length is:" + strconv.Itoa(utf8.RuneCountInString(update.Message.Text))))
 		}
 	}
 }
